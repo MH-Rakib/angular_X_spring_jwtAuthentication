@@ -1,12 +1,11 @@
 package com.bits.jwtImpl.dao;
 
 import com.bits.jwtImpl.entity.User;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
 
-
+@Repository
 public interface UserDao extends CrudRepository<User, Long> {
 
 }

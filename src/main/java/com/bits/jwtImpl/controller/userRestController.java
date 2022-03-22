@@ -18,6 +18,11 @@ public class userRestController {
         this.userService = userService;
     }
 
+    @GetMapping(value = "/")
+    public String root( ) {
+        return "This is the root url";
+    }
+
     @GetMapping(value = "/getAll")
     public List<User> getAll( ) {
         return userService.getAllUsers();
